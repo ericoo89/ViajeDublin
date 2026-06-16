@@ -318,7 +318,7 @@ const days = [
     weekday: "Domingo",
     month: "Julio",
     title: "Domingo tranquilo en Dublín",
-    subtitle: "Cambio de hotel, paseo suave y free tour",
+    subtitle: "GoQuest por la mañana, vuelta al Royal Marine y cambio al Hampton",
     image: {
       src: "Imagenes/domingo5.png",
       alt: "Imagen de cabecera del domingo en Dublín",
@@ -326,14 +326,16 @@ const days = [
     color: "#e0e7ff",
     keyInfo: [
       ["Desayuno", "09:00 en Royal Marine Hotel"],
+      ["Excursión", "11:30 en GoQuest Arena"],
       ["Nuevo hotel", "Hampton by Hilton Dublin City Centre, zona Four Courts"],
-      ["Plan", "Día tranquilo cerca del centro + free tour"],
+      ["Plan", "Comer en GoQuest y trasladarse al Hampton sobre las 17:00"],
     ],
     notes: [
       "Royal Marine sirve desayuno los domingos de 08:00 a 11:00.",
-      "Confirmar hora real de check-in del Hampton by Hilton; si la habitación no está lista, dejar maletas y empezar el paseo.",
-      "Este domingo queda suave para recuperar después de la conferencia y el cambio de hotel.",
-      "Free tour Civitatis previsto a las 16:00. Confirmar en la reserva el punto exacto de encuentro, porque puede variar según fecha y hora.",
+      "Confirmar hora exacta, dirección y duración de la reserva de GoQuest Arena.",
+      "Dejar el free tour fuera del plan: con GoQuest, comida, vuelta al Royal Marine y cambio de hotel no da tiempo sin ir con prisa.",
+      "Preparar las maletas antes de salir a GoQuest para que al volver al Royal Marine solo quede recogerlas e ir hacia el Hampton.",
+      "Confirmar hora real de check-in del Hampton by Hilton; llegada estimada sobre las 18:00-18:30 si se sale del Royal Marine a las 17:00.",
     ],
     events: [
       {
@@ -344,10 +346,81 @@ const days = [
         meta: ["Hotel", "Sin prisa"],
       },
       {
-        time: "10:00",
+        time: "10:15",
+        title: "Preparar maletas antes de salir",
+        tag: "Hotel",
+        description: "Dejar las maletas cerradas o casi listas en el Royal Marine para poder volver de GoQuest, recogerlas y salir hacia el Hampton sin tener que rehacer el equipaje.",
+        meta: ["Royal Marine", "Antes de GoQuest"],
+      },
+      {
+        time: "10:45",
+        title: "Traslado a GoQuest Arena",
+        tag: "Traslado",
+        description: "Salir con margen desde Royal Marine Hotel hacia GoQuest Arena para llegar antes de la reserva de las 11:30. Revisar esa mañana si compensa taxi o transporte público según tiempo y energía.",
+        meta: ["Royal Marine -> GoQuest", "Llegar antes de las 11:30"],
+        links: [
+          {
+            label: "Ruta a GoQuest",
+            href: "https://www.google.com/maps/dir/?api=1&origin=Royal%20Marine%20Hotel%20Dun%20Laoghaire&destination=GoQuest%20Arena%20Dublin&travelmode=driving",
+          },
+          {
+            label: "Ver GoQuest",
+            href: "https://www.google.com/maps/search/?api=1&query=GoQuest%20Arena%20Dublin",
+          },
+        ],
+      },
+      {
+        time: "11:30",
+        title: "GoQuest Arena",
+        tag: "Actividad",
+        tagTone: "important",
+        description: "Excursión a GoQuest para hacer la actividad de Arena. Mantener el bloque amplio porque entre llegada, actividad y salida se irá buena parte del mediodía.",
+        meta: ["Reserva: 11:30", "GoQuest Arena", "Confirmar duración"],
+        links: [
+          {
+            label: "GoQuest",
+            href: "https://www.google.com/maps/search/?api=1&query=GoQuest%20Arena%20Dublin",
+          },
+        ],
+      },
+      {
+        time: "13:30",
+        title: "Comida en GoQuest o cerca",
+        tag: "Comida",
+        description: "Comer allí o en la zona, sin forzar volver todavía al centro. Este bloque sustituye la comida que antes estaba prevista cerca de Four Courts.",
+        meta: ["Comida allí", "Horario flexible"],
+        links: [
+          {
+            label: "Comer cerca",
+            href: "https://www.google.com/maps/search/?api=1&query=restaurants%20near%20GoQuest%20Arena%20Dublin",
+          },
+        ],
+      },
+      {
+        time: "15:30",
+        title: "Vuelta al Royal Marine Hotel",
+        tag: "Traslado",
+        description: "Volver al Royal Marine después de comer para recoger las maletas y hacer el cambio de hotel con calma.",
+        meta: ["GoQuest -> Royal Marine", "Recoger maletas"],
+        links: [
+          {
+            label: "Ruta de vuelta",
+            href: "https://www.google.com/maps/dir/?api=1&origin=GoQuest%20Arena%20Dublin&destination=Royal%20Marine%20Hotel%20Dun%20Laoghaire&travelmode=driving",
+          },
+        ],
+      },
+      {
+        time: "16:15",
+        title: "Recoger maletas en Royal Marine",
+        tag: "Hotel",
+        description: "Recoger equipaje, revisar que no queda nada pendiente y preparar el traslado al Hampton by Hilton.",
+        meta: ["Royal Marine", "Salida hacia el centro"],
+      },
+      {
+        time: "17:00",
         title: "Traslado al Hampton by Hilton",
         tag: "Traslado",
-        description: "Ruta en tres pasos: primero coger el DART en Dún Laoghaire (Mallin) hasta Dublin Connolly. Después tomar el Luas Red Line desde Connolly hasta Four Courts. Por último, caminar unos minutos hasta Hampton by Hilton Dublin City Centre. Para comprar o consultar el billete del DART, entra en Irish Rail con origen Dún Laoghaire (Mallin) y destino Dublin Connolly. Si usas TFI Leap Card, valida en DART y Luas.",
+        description: "Salir desde Royal Marine hacia Hampton by Hilton sobre las 17:00. Ruta en tres pasos: primero coger el DART en Dún Laoghaire (Mallin) hasta Dublin Connolly. Después tomar el Luas Red Line desde Connolly hasta Four Courts. Por último, caminar unos minutos hasta Hampton by Hilton Dublin City Centre. Si hay cansancio o equipaje incómodo, valorar taxi.",
         meta: ["1. DART: Dún Laoghaire -> Connolly", "2. Luas: Connolly -> Four Courts", "3. Andando: Four Courts -> Hampton", "Total aprox. 55-75 min"],
         links: [
           {
@@ -381,10 +454,10 @@ const days = [
         ],
       },
       {
-        time: "11:15",
+        time: "18:15",
         title: "Llegada al Hampton by Hilton",
         tag: "Hotel",
-        description: "Hacer check-in si la habitación está lista. Si no, dejar maletas en recepción y salir ligero a conocer el centro.",
+        description: "Hacer check-in, dejar maletas y bajar el ritmo. Después de GoQuest y el cambio de hotel, mejor no encajar el free tour este día.",
         meta: ["Four Courts", "Dublin 7"],
         links: [
           {
@@ -394,75 +467,11 @@ const days = [
         ],
       },
       {
-        time: "12:00",
-        title: "Paseo por O'Connell Street y GPO",
-        tag: "Paseo",
-        description: "Paseo suave desde el Hampton by Hilton por O'Connell Street, el Spire y el GPO por fuera. Es céntrico y fácil de adaptar si estás cansado.",
-        meta: ["Gratis", "Cerca del hotel"],
-        links: [
-          {
-            label: "Ruta a pie",
-            href: "https://www.google.com/maps/dir/?api=1&origin=Hampton%20by%20Hilton%20Dublin%20City%20Centre&destination=GPO%20Dublin&travelmode=walking",
-          },
-        ],
-      },
-      {
-        time: "13:00",
-        title: "Comida cerca de Four Courts o Smithfield",
-        tag: "Comida",
-        description: "Comida tranquila cerca del hotel, sin alejarse demasiado. Buen momento para decidir si apetece seguir paseando o descansar.",
-        meta: ["Cerca del hotel", "Sin prisa"],
-        links: [
-          {
-            label: "Restaurantes cerca",
-            href: "https://www.google.com/maps/search/?api=1&query=restaurants%20near%20Hampton%20by%20Hilton%20Dublin%20City%20Centre",
-          },
-        ],
-      },
-      {
-        time: "14:00",
-        title: "Descanso o café cerca del hotel",
-        tag: "Descanso",
-        description: "Bloque ligero para descansar, hacer check-in si quedó pendiente o tomar café antes del free tour.",
-        meta: ["Flexible", "Sin presión"],
-      },
-      {
-        time: "15:45",
-        title: "Ir al punto de encuentro del free tour",
-        tag: "Traslado",
-        description: "Ir al punto de encuentro indicado por Civitatis y llegar unos minutos antes para localizar al guía. En la ficha del tour aparece que el punto puede variar según la fecha y hora seleccionadas.",
-        meta: ["Confirmar en Civitatis", "Llegar antes de las 16:00", "Bono en el móvil"],
-        links: [
-          {
-            label: "Reserva Civitatis",
-            href: "https://www.civitatis.com/es/dublin/visita-guiada-dublin/",
-          },
-          {
-            label: "The Spire",
-            href: "https://www.google.com/maps/search/?api=1&query=The%20Spire%20O'Connell%20Street%20Dublin",
-          },
-        ],
-      },
-      {
-        time: "16:00",
-        title: "Free tour por Dublín con Civitatis",
-        tag: "Tour",
-        tagTone: "important",
-        description: "Tour en español por el casco antiguo de Dublín. Recorre zonas como O'Connell Bridge, Ha'Penny Bridge, Dublin Castle, City Hall, Temple Bar, Chester Beatty, restos vikingos y jardines Dubh Linn. Duración aproximada: 2h30. El tour es gratis, pero las propinas no están incluidas.",
-        meta: ["16:00", "2h 30m", "Guía en español", "Bono electrónico"],
-        links: [
-          {
-            label: "Reservar en Civitatis",
-            href: "https://www.civitatis.com/es/dublin/visita-guiada-dublin/",
-          },
-        ],
-      },
-      {
-        time: "19:00",
+        time: "19:30",
         title: "Cena cerca del Hampton by Hilton",
         tag: "Cena",
-        description: "Cena sobre las 19:00-20:00, cómoda y cerca del hotel. Mantener el día suave.",
-        meta: ["19:00-20:00", "Four Courts / Smithfield"],
+        description: "Cena cómoda cerca del hotel. Mantener la noche suave y dejar el centro de Dublín para el lunes, con más energía.",
+        meta: ["19:30-20:30", "Four Courts / Smithfield"],
         links: [
           {
             label: "Opciones cerca",
@@ -471,7 +480,7 @@ const days = [
         ],
       },
       {
-        time: "20:30",
+        time: "21:00",
         title: "Noche libre o música cerca del hotel",
         tag: "Noche",
         description: "Plan ligero: pub cercano, música en el hotel o descanso.",
