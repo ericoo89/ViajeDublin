@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <title>Viaje a Dublín 2026</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <nav class="day-strip" aria-label="Días del viaje" id="dayStrip"></nav>
+    </header>
+
+    <section class="day-visual" id="dayVisual" aria-label="Imagen del día"></section>
+
+    <main class="app-main">
+      <section class="content-grid">
+        <div class="panel timeline-panel">
+          <div class="panel-heading">
+            <h3>Agenda por horas</h3>
+            <span id="eventCount"></span>
+          </div>
+          <ol class="timeline" id="timeline"></ol>
+        </div>
+
+        <aside class="side-stack">
+          <section class="panel">
+            <div class="panel-heading">
+              <h3>Datos clave</h3>
+            </div>
+            <dl class="info-list" id="keyInfo"></dl>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h3>Notas</h3>
+            </div>
+            <ul class="notes-list" id="notes"></ul>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
