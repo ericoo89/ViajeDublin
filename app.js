@@ -494,23 +494,23 @@ const days = [
     weekday: "Lunes",
     month: "Julio",
     title: "Historia de Dublín",
-    subtitle: "Book of Kells, St Patrick, Guinness y Dublín histórico",
+    subtitle: "Book of Kells, Christ Church, St Patrick, Guinness y Dublín histórico",
     image: {
       src: "Imagenes/Lunes6.png",
       alt: "Imagen de cabecera del lunes en Dublín",
     },
     color: "#ccfbf1",
     keyInfo: [
-      ["Plan fuerte", "Book of Kells + St Patrick por dentro + Guinness + Dublin Castle"],
+      ["Plan fuerte", "Book of Kells + Christ Church/Temple Bar + Dublin Castle + St Patrick + Guinness"],
       ["Desayuno", "Incluido en Hampton by Hilton"],
-      ["Comida", "12:30 aprox., antes de St Patrick"],
-      ["Cena", "19:00-20:00 cerca del hotel o centro norte"],
+      ["Comida", "13:15 aprox., zona Temple Bar/Dame Street"],
+      ["Cena", "20:00 aprox., cerca de Guinness o del hotel"],
     ],
     notes: [
       "Reservar Book of Kells, St Patrick y Guinness con hora concreta.",
       "Desayuno incluido en Hampton by Hilton; no hace falta buscar cafetería por la mañana.",
       "Kilmainham Gaol pasa al miércoles por la mañana.",
-      "St Patrick debe hacerse antes de la última entrada de las 16:30; este plan la coloca a las 14:00 con margen.",
+      "St Patrick queda reservado a las 15:30; desde allí el traslado natural es hacia Guinness Storehouse.",
       "Dublin Castle queda incluido como parada exterior/histórica; el interior y el campus pueden estar cerrados por la Presidencia de la UE.",
       "Dublinia queda solo como extra opcional si sobra tiempo; no forma parte del plan principal.",
     ],
@@ -541,38 +541,98 @@ const days = [
         ],
       },
       {
-        time: "11:30",
-        title: "Traslado a zona St Patrick",
-        tag: "Traslado",
-        description: "Ir desde Trinity hacia la zona de St Patrick/Christchurch para comer y entrar a la catedral con margen.",
-        meta: ["Trinity -> St Patrick", "Sin apurar"],
+        time: "11:15",
+        title: "Paseo hacia Christ Church",
+        tag: "Paseo",
+        description: "Salir de Trinity hacia Christ Church por Dame Street. Tiene más sentido hacer primero esta zona histórica antes de bajar a St Patrick.",
+        meta: ["Trinity -> Christ Church", "20-25 min a pie"],
         links: [
           {
             label: "Cómo llegar",
-            href: "https://www.google.com/maps/dir/?api=1&origin=Trinity%20College%20Dublin&destination=St%20Patrick's%20Cathedral%20Dublin&travelmode=transit",
+            href: "https://www.google.com/maps/dir/?api=1&origin=Trinity%20College%20Dublin&destination=Christ%20Church%20Cathedral%20Dublin&travelmode=walking",
+          },
+        ],
+      },
+      {
+        time: "11:45",
+        title: "Christ Church y entorno de Dublinia",
+        tag: "Parada",
+        description: "Ver Christ Church por fuera o entrar si apetece una visita corta. Dublinia queda al lado, pero sigue siendo opcional y prescindible.",
+        meta: ["Flexible", "Junto a Dublinia"],
+        links: [
+          {
+            label: "Christ Church",
+            href: "https://christchurchcathedral.ie/visiting/",
           },
         ],
       },
       {
         time: "12:30",
-        title: "Comida cerca de St Patrick",
-        tag: "Comida",
-        description: "Comida sobre las 12:30-13:30 cerca de la catedral. Así entras a St Patrick con margen antes de la última admisión de las 16:30.",
-        meta: ["Horario local", "Zona St Patrick"],
+        title: "Temple Bar, Dame Street y el Liffey",
+        tag: "Paseo",
+        description: "Paseo por Temple Bar y el centro histórico sin cruzar todavía hacia St Patrick. Buen tramo para fotos, ambiente y margen antes de comer.",
+        meta: ["Flexible", "Centro histórico"],
         links: [
           {
-            label: "Restaurantes cerca",
-            href: "https://www.google.com/maps/search/?api=1&query=restaurants%20near%20St%20Patrick's%20Cathedral%20Dublin",
+            label: "Temple Bar",
+            href: "https://www.google.com/maps/search/?api=1&query=Temple%20Bar%20Dublin",
+          },
+          {
+            label: "Dame Street",
+            href: "https://www.google.com/maps/search/?api=1&query=Dame%20Street%20Dublin",
           },
         ],
       },
       {
-        time: "14:00",
+        time: "13:15",
+        title: "Comida en Temple Bar o Dame Street",
+        tag: "Comida",
+        description: "Comida sobre las 13:15-14:15 en Temple Bar, Dame Street o alrededores de Dublin Castle. Así queda una tarde ordenada antes de St Patrick a las 15:30.",
+        meta: ["Horario local", "Zona céntrica"],
+        links: [
+          {
+            label: "Restaurantes cerca",
+            href: "https://www.google.com/maps/search/?api=1&query=restaurants%20near%20Temple%20Bar%20Dublin",
+          },
+        ],
+      },
+      {
+        time: "14:30",
+        title: "Dublin Castle por fuera",
+        tag: "Parada",
+        description: "Parada para situar Dublin Castle en la guía y verlo desde la zona de Dame Street/Castle Street si el perímetro lo permite. En julio de 2026 no conviene contar con visita interior.",
+        meta: ["Exterior", "Centro histórico"],
+        links: [
+          {
+            label: "Web oficial",
+            href: "https://dublincastle.ie/",
+          },
+          {
+            label: "Cómo llegar",
+            href: "https://www.google.com/maps/dir/?api=1&origin=Temple%20Bar%20Dublin&destination=Dublin%20Castle&travelmode=walking",
+          },
+        ],
+      },
+      {
+        time: "15:10",
+        title: "Traslado a St Patrick",
+        tag: "Traslado",
+        description: "Bajar desde Dublin Castle hacia St Patrick con margen para la entrada de las 15:30.",
+        meta: ["Dublin Castle -> St Patrick", "15-20 min a pie"],
+        links: [
+          {
+            label: "Cómo llegar",
+            href: "https://www.google.com/maps/dir/?api=1&origin=Dublin%20Castle&destination=St%20Patrick's%20Cathedral%20Dublin&travelmode=walking",
+          },
+        ],
+      },
+      {
+        time: "15:30",
         title: "Catedral de St Patrick por dentro",
         tag: "Entrada",
         tagTone: "important",
-        description: "Visita interior a la catedral nacional de Irlanda. Programada a las 14:00 para entrar con margen suficiente antes de la última entrada de las 16:30.",
-        meta: ["De pago", "Entrar antes de 16:30", "45-60 min"],
+        description: "Visita interior a la catedral nacional de Irlanda. Hora fijada a las 15:30; desde aquí ya queda muy natural continuar hacia Guinness Storehouse.",
+        meta: ["De pago", "Reserva 15:30", "45-60 min"],
         links: [
           {
             label: "Entradas",
@@ -585,50 +645,20 @@ const days = [
         ],
       },
       {
-        time: "15:15",
-        title: "Dublin Castle por fuera",
-        tag: "Parada",
-        description: "Parada para situar Dublin Castle en la guía y verlo desde la zona de Dame Street/Castle Street si el perímetro lo permite. En julio de 2026 no conviene contar con visita interior.",
-        meta: ["Exterior", "Centro histórico"],
-        links: [
-          {
-            label: "Web oficial",
-            href: "https://dublincastle.ie/",
-          },
-          {
-            label: "Cómo llegar",
-            href: "https://www.google.com/maps/dir/?api=1&origin=St%20Patrick's%20Cathedral%20Dublin&destination=Dublin%20Castle&travelmode=walking",
-          },
-        ],
-      },
-      {
-        time: "15:45",
-        title: "Christ Church y Temple Bar",
-        tag: "Paseo",
-        description: "Ver Christ Church por fuera o entrar si aún quedan ganas. Después, paseo hacia Dame Street, Temple Bar y el Liffey.",
-        meta: ["Flexible", "Centro histórico"],
-        links: [
-          {
-            label: "Christ Church",
-            href: "https://christchurchcathedral.ie/visiting/",
-          },
-        ],
-      },
-      {
-        time: "16:30",
+        time: "16:35",
         title: "Traslado a Guinness Storehouse",
         tag: "Traslado",
-        description: "Ir hacia Guinness Storehouse para la visita de tarde. Reservar una hora realista a partir de las 17:00.",
-        meta: ["Centro histórico -> Guinness", "Llegar con margen"],
+        description: "Ir desde St Patrick hacia Guinness Storehouse para la visita de tarde. Reservar una hora realista a partir de las 17:15.",
+        meta: ["St Patrick -> Guinness", "Llegar con margen"],
         links: [
           {
             label: "Cómo ir",
-            href: "https://www.google.com/maps/dir/?api=1&origin=Dublin%20Castle&destination=Guinness%20Storehouse&travelmode=transit",
+            href: "https://www.google.com/maps/dir/?api=1&origin=St%20Patrick's%20Cathedral%20Dublin&destination=Guinness%20Storehouse&travelmode=walking",
           },
         ],
       },
       {
-        time: "17:00",
+        time: "17:15",
         title: "Guinness Storehouse",
         tag: "Entrada",
         tagTone: "important",
