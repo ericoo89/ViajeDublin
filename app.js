@@ -503,14 +503,14 @@ const days = [
     keyInfo: [
       ["Plan fuerte", "Book of Kells + Christ Church/Temple Bar + Dublin Castle + St Patrick + Guinness"],
       ["Desayuno", "Incluido en Hampton by Hilton"],
-      ["Comida", "13:15 aprox., zona Temple Bar/Dame Street"],
-      ["Cena", "20:00 aprox., cerca de Guinness o del hotel"],
+      ["Comida", "13:00 aprox., zona Temple Bar/Dame Street"],
+      ["Cena", "19:30-20:00 cerca de Guinness o del hotel"],
     ],
     notes: [
       "Reservar Book of Kells, St Patrick y Guinness con hora concreta.",
       "Desayuno incluido en Hampton by Hilton; no hace falta buscar cafetería por la mañana.",
       "Kilmainham Gaol pasa al miércoles por la mañana.",
-      "St Patrick queda reservado a las 15:30; desde allí el traslado natural es hacia Guinness Storehouse.",
+      "St Patrick queda reservado a las 15:15; desde allí el traslado natural es hacia Guinness Storehouse.",
       "Dublin Castle queda incluido como parada exterior/histórica; el interior y el campus pueden estar cerrados por la Presidencia de la UE.",
       "Dublinia queda solo como extra opcional si sobra tiempo; no forma parte del plan principal.",
     ],
@@ -544,8 +544,8 @@ const days = [
         time: "11:15",
         title: "Paseo hacia Christ Church",
         tag: "Paseo",
-        description: "Salir de Trinity hacia Christ Church por Dame Street. Tiene más sentido hacer primero esta zona histórica antes de bajar a St Patrick.",
-        meta: ["Trinity -> Christ Church", "20-25 min a pie"],
+        description: "Salir de Trinity hacia Christ Church por Dame Street. Son unos 15 minutos a pie y tiene más sentido hacer primero esta zona histórica antes de bajar a St Patrick.",
+        meta: ["Trinity -> Christ Church", "15 min a pie"],
         links: [
           {
             label: "Cómo llegar",
@@ -554,7 +554,7 @@ const days = [
         ],
       },
       {
-        time: "11:45",
+        time: "11:35",
         title: "Christ Church y entorno de Dublinia",
         tag: "Parada",
         description: "Ver Christ Church por fuera o entrar si apetece una visita corta. Dublinia queda al lado, pero sigue siendo opcional y prescindible.",
@@ -567,7 +567,7 @@ const days = [
         ],
       },
       {
-        time: "12:30",
+        time: "12:15",
         title: "Temple Bar, Dame Street y el Liffey",
         tag: "Paseo",
         description: "Paseo por Temple Bar y el centro histórico sin cruzar todavía hacia St Patrick. Buen tramo para fotos, ambiente y margen antes de comer.",
@@ -584,10 +584,10 @@ const days = [
         ],
       },
       {
-        time: "13:15",
+        time: "13:00",
         title: "Comida en Temple Bar o Dame Street",
         tag: "Comida",
-        description: "Comida sobre las 13:15-14:15 en Temple Bar, Dame Street o alrededores de Dublin Castle. Así queda una tarde ordenada antes de St Patrick a las 15:30.",
+        description: "Comida sobre las 13:00-14:00 en Temple Bar, Dame Street o alrededores de Dublin Castle. Así queda una tarde ordenada antes de St Patrick a las 15:15.",
         meta: ["Horario local", "Zona céntrica"],
         links: [
           {
@@ -597,7 +597,7 @@ const days = [
         ],
       },
       {
-        time: "14:30",
+        time: "14:15",
         title: "Dublin Castle por fuera",
         tag: "Parada",
         description: "Parada para situar Dublin Castle en la guía y verlo desde la zona de Dame Street/Castle Street si el perímetro lo permite. En julio de 2026 no conviene contar con visita interior.",
@@ -614,10 +614,10 @@ const days = [
         ],
       },
       {
-        time: "15:10",
+        time: "14:50",
         title: "Traslado a St Patrick",
         tag: "Traslado",
-        description: "Bajar desde Dublin Castle hacia St Patrick con margen para la entrada de las 15:30.",
+        description: "Bajar desde Dublin Castle hacia St Patrick con margen para la entrada de las 15:15.",
         meta: ["Dublin Castle -> St Patrick", "15-20 min a pie"],
         links: [
           {
@@ -627,12 +627,12 @@ const days = [
         ],
       },
       {
-        time: "15:30",
+        time: "15:15",
         title: "Catedral de St Patrick por dentro",
         tag: "Entrada",
         tagTone: "important",
-        description: "Visita interior a la catedral nacional de Irlanda. Hora fijada a las 15:30; desde aquí ya queda muy natural continuar hacia Guinness Storehouse.",
-        meta: ["De pago", "Reserva 15:30", "45-60 min"],
+        description: "Visita interior a la catedral nacional de Irlanda. Hora fijada a las 15:15; desde aquí ya queda muy natural continuar hacia Guinness Storehouse.",
+        meta: ["De pago", "Reserva 15:15", "45-60 min"],
         links: [
           {
             label: "Entradas",
@@ -645,10 +645,10 @@ const days = [
         ],
       },
       {
-        time: "16:35",
+        time: "16:20",
         title: "Traslado a Guinness Storehouse",
         tag: "Traslado",
-        description: "Ir desde St Patrick hacia Guinness Storehouse para la visita de tarde. Reservar una hora realista a partir de las 17:15.",
+        description: "Ir desde St Patrick hacia Guinness Storehouse para la visita de tarde. Reservar una hora realista a partir de las 17:00.",
         meta: ["St Patrick -> Guinness", "Llegar con margen"],
         links: [
           {
@@ -658,7 +658,7 @@ const days = [
         ],
       },
       {
-        time: "17:15",
+        time: "17:00",
         title: "Guinness Storehouse",
         tag: "Entrada",
         tagTone: "important",
