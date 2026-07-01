@@ -326,16 +326,17 @@ const days = [
     color: "#e0e7ff",
     keyInfo: [
       ["Desayuno", "09:00 en Royal Marine Hotel"],
-      ["Excursión", "11:30 en GoQuest Arena"],
+      ["GoQuest", "11:30, actividad de 1 h 45 min"],
       ["Nuevo hotel", "Hampton by Hilton Dublin City Centre, zona Four Courts"],
-      ["Plan", "Comer en GoQuest y trasladarse al Hampton sobre las 17:00"],
+      ["Plan", "Volver al Royal Marine sobre las 14:30, comer algo flexible y luego ir al Hampton"],
     ],
     notes: [
       "Royal Marine sirve desayuno los domingos de 08:00 a 11:00.",
-      "Confirmar hora exacta, dirección y duración de la reserva de GoQuest Arena.",
+      "GoQuest está previsto a las 11:30 y la actividad dura 1 hora y 45 minutos.",
       "Dejar el free tour fuera del plan: con GoQuest, comida, vuelta al Royal Marine y cambio de hotel no da tiempo sin ir con prisa.",
       "Preparar las maletas antes de salir a GoQuest para que al volver al Royal Marine solo quede recogerlas e ir hacia el Hampton.",
-      "Confirmar hora real de check-in del Hampton by Hilton; llegada estimada sobre las 18:00-18:30 si se sale del Royal Marine a las 17:00.",
+      "La comida queda flexible al volver al Royal Marine: buscar algo por la zona según hambre, cansancio y horario.",
+      "Confirmar hora real de check-in del Hampton by Hilton; llegada estimada sobre las 17:30-18:30 según cuánto se alargue la comida.",
     ],
     events: [
       {
@@ -374,8 +375,8 @@ const days = [
         title: "GoQuest Arena",
         tag: "Actividad",
         tagTone: "important",
-        description: "Excursión a GoQuest para hacer la actividad de Arena. Mantener el bloque amplio porque entre llegada, actividad y salida se irá buena parte del mediodía.",
-        meta: ["Reserva: 11:30", "GoQuest Arena", "Confirmar duración"],
+        description: "Actividad de GoQuest Arena con reserva a las 11:30. La duración prevista es de 1 hora y 45 minutos, terminando alrededor de las 13:15.",
+        meta: ["Reserva: 11:30", "GoQuest Arena", "Duración: 1 h 45 min"],
         links: [
           {
             label: "GoQuest",
@@ -384,24 +385,11 @@ const days = [
         ],
       },
       {
-        time: "13:30",
-        title: "Comida en GoQuest o cerca",
-        tag: "Comida",
-        description: "Comer allí o en la zona, sin forzar volver todavía al centro. Este bloque sustituye la comida que antes estaba prevista cerca de Four Courts.",
-        meta: ["Comida allí", "Horario flexible"],
-        links: [
-          {
-            label: "Comer cerca",
-            href: "https://www.google.com/maps/search/?api=1&query=restaurants%20near%20GoQuest%20Arena%20Dublin",
-          },
-        ],
-      },
-      {
-        time: "15:30",
+        time: "13:15",
         title: "Vuelta al Royal Marine Hotel",
         tag: "Traslado",
-        description: "Volver al Royal Marine después de comer para recoger las maletas y hacer el cambio de hotel con calma.",
-        meta: ["GoQuest -> Royal Marine", "Recoger maletas"],
+        description: "Al terminar GoQuest, volver directamente al Royal Marine Hotel. La idea es estar de vuelta sobre las 14:30.",
+        meta: ["GoQuest -> Royal Marine", "Llegada objetivo: 14:30"],
         links: [
           {
             label: "Ruta de vuelta",
@@ -410,17 +398,23 @@ const days = [
         ],
       },
       {
-        time: "16:15",
-        title: "Recoger maletas en Royal Marine",
-        tag: "Hotel",
-        description: "Recoger equipaje, revisar que no queda nada pendiente y preparar el traslado al Hampton by Hilton.",
-        meta: ["Royal Marine", "Salida hacia el centro"],
+        time: "14:30",
+        title: "Royal Marine, comida flexible y maletas",
+        tag: "Comida",
+        description: "Llegar al Royal Marine, buscar algo para comer por la zona según apetezca y recoger el equipaje antes de cambiar de hotel.",
+        meta: ["Royal Marine", "Comida improvisada", "Recoger maletas"],
+        links: [
+          {
+            label: "Comer cerca",
+            href: "https://www.google.com/maps/search/?api=1&query=restaurants%20near%20Royal%20Marine%20Hotel%20Dun%20Laoghaire",
+          },
+        ],
       },
       {
-        time: "17:00",
+        time: "16:30",
         title: "Traslado al Hampton by Hilton",
         tag: "Traslado",
-        description: "Salir desde Royal Marine hacia Hampton by Hilton sobre las 17:00. Ruta en tres pasos: primero coger el DART en Dún Laoghaire (Mallin) hasta Dublin Connolly. Después tomar el Luas Red Line desde Connolly hasta Four Courts. Por último, caminar unos minutos hasta Hampton by Hilton Dublin City Centre. Si hay cansancio o equipaje incómodo, valorar taxi.",
+        description: "Salir desde Royal Marine hacia Hampton by Hilton cuando estén la comida y las maletas resueltas. Ruta en tres pasos: primero coger el DART en Dún Laoghaire (Mallin) hasta Dublin Connolly. Después tomar el Luas Red Line desde Connolly hasta Four Courts. Por último, caminar unos minutos hasta Hampton by Hilton Dublin City Centre. Si hay cansancio o equipaje incómodo, valorar taxi.",
         meta: ["1. DART: Dún Laoghaire -> Connolly", "2. Luas: Connolly -> Four Courts", "3. Andando: Four Courts -> Hampton", "Total aprox. 55-75 min"],
         links: [
           {
@@ -719,26 +713,131 @@ const days = [
     number: "7",
     weekday: "Martes",
     month: "Julio",
-    title: "Excursión fuera de Dublín",
-    subtitle: "Día reservado para elegir excursión",
+    title: "Kilkenny o día libre en Dublín",
+    subtitle: "Excursión provisional a Kilkenny de 09:30 a 19:00",
+    image: {
+      src: "Imagenes/Martes7.png",
+      alt: "Imagen de cabecera del martes de excursión fuera de Dublín",
+    },
     color: "#fce7f3",
     keyInfo: [
-      ["Estado", "Pendiente de elegir excursión"],
-      ["Idea", "Día completo fuera de Dublín"],
+      ["Estado", "Plan provisional"],
+      ["Excursión", "Kilkenny, salida de Dublín a las 09:30 y regreso sobre las 19:00"],
+      ["Plan B", "Si no hay excursión, dejar el día libre por Dublín"],
       ["Hotel", "Salida y regreso desde Hampton by Hilton"],
     ],
     notes: [
-      "Día bloqueado para excursión fuera de Dublín. Opciones posibles: Howth, Glendalough/Wicklow, Belfast/Giant's Causeway o Cliffs of Moher.",
-      "Cuando elijas excursión, añadir hora de salida, punto de recogida, comida y regreso.",
-      "No cargar este día con visitas de Dublín.",
+      "Kilkenny queda como primera opción para una excursión de día completo, saliendo de Dublín a las 09:30 y volviendo sobre las 19:00.",
+      "Confirmar si la excursión será organizada o por cuenta propia en tren/bus antes de fijar punto de salida y billetes.",
+      "Si al final no hay excursión, convertir este martes en día libre por Dublín sin reservas fuertes.",
+      "No cargar este día con visitas imprescindibles de Dublín hasta saber si Kilkenny queda confirmado.",
     ],
     events: [
       {
-        time: "Todo el día",
-        title: "Excursión por decidir",
+        time: "08:30",
+        title: "Desayuno en Hampton by Hilton",
+        tag: "Comida",
+        description: "Desayunar en el hotel y salir con margen para llegar al punto de salida de la excursión.",
+        meta: ["Incluido", "Hampton by Hilton", "Antes de salir"],
+      },
+      {
+        time: "09:30",
+        title: "Salida de Dublín hacia Kilkenny",
         tag: "Excursión",
-        description: "Reservado para una excursión fuera de Dublín. Cuando elijas destino, se sustituirá por la ruta real con horarios.",
-        meta: ["Pendiente", "Fuera de Dublín"],
+        tagTone: "important",
+        description: "Salida provisional desde Dublín hacia Kilkenny. Falta decidir si será excursión organizada o traslado por cuenta propia.",
+        meta: ["Salida 09:30", "Dublín -> Kilkenny", "Confirmar punto de salida"],
+        links: [
+          {
+            label: "Ruta a Kilkenny",
+            href: "https://www.google.com/maps/dir/?api=1&origin=Dublin%20City%20Centre&destination=Kilkenny%20Ireland&travelmode=transit",
+          },
+        ],
+      },
+      {
+        time: "11:30",
+        title: "Llegada a Kilkenny",
+        tag: "Llegada",
+        description: "Llegada estimada a Kilkenny y primer paseo por el centro para orientarse.",
+        meta: ["Kilkenny", "Horario aproximado"],
+        links: [
+          {
+            label: "Centro de Kilkenny",
+            href: "https://www.google.com/maps/search/?api=1&query=Kilkenny%20city%20centre",
+          },
+        ],
+      },
+      {
+        time: "12:00",
+        title: "Kilkenny Castle y centro histórico",
+        tag: "Visita",
+        tagTone: "important",
+        description: "Visita principal del día: Kilkenny Castle y paseo por el centro histórico, manteniendo el ritmo flexible según la excursión elegida.",
+        meta: ["Castillo", "Centro histórico", "Flexible"],
+        links: [
+          {
+            label: "Kilkenny Castle",
+            href: "https://www.google.com/maps/search/?api=1&query=Kilkenny%20Castle",
+          },
+        ],
+      },
+      {
+        time: "13:30",
+        title: "Comida en Kilkenny",
+        tag: "Comida",
+        description: "Comer en el centro de Kilkenny sin apurar demasiado, dejando margen para pasear por la tarde.",
+        meta: ["Centro", "Horario flexible"],
+        links: [
+          {
+            label: "Restaurantes cerca",
+            href: "https://www.google.com/maps/search/?api=1&query=restaurants%20near%20Kilkenny%20Castle",
+          },
+        ],
+      },
+      {
+        time: "15:00",
+        title: "Paseo por Medieval Mile",
+        tag: "Paseo",
+        description: "Tramo de tarde para recorrer Medieval Mile, calles del centro y, si encaja, acercarse a St Canice's Cathedral.",
+        meta: ["Medieval Mile", "St Canice opcional", "Fotos y paseo"],
+        links: [
+          {
+            label: "Medieval Mile",
+            href: "https://www.google.com/maps/search/?api=1&query=Medieval%20Mile%20Kilkenny",
+          },
+          {
+            label: "St Canice",
+            href: "https://www.google.com/maps/search/?api=1&query=St%20Canice's%20Cathedral%20Kilkenny",
+          },
+        ],
+      },
+      {
+        time: "17:00",
+        title: "Regreso hacia Dublín",
+        tag: "Traslado",
+        tagTone: "important",
+        description: "Inicio del regreso desde Kilkenny para llegar de vuelta a Dublín sobre las 19:00.",
+        meta: ["Kilkenny -> Dublín", "Llegada objetivo 19:00"],
+        links: [
+          {
+            label: "Ruta de vuelta",
+            href: "https://www.google.com/maps/dir/?api=1&origin=Kilkenny%20Ireland&destination=Hampton%20by%20Hilton%20Dublin%20City%20Centre&travelmode=transit",
+          },
+        ],
+      },
+      {
+        time: "19:00",
+        title: "Llegada a Dublín",
+        tag: "Llegada",
+        description: "Llegada prevista a Dublín. Dejar la noche flexible para cenar cerca del hotel o descansar.",
+        meta: ["Regreso", "Noche libre"],
+      },
+      {
+        time: "Plan B",
+        title: "Día libre por Dublín si no hay excursión",
+        tag: "Opcional",
+        description: "Si Kilkenny no se confirma, usar el martes como día libre por Dublín: paseos, compras, pubs, museos pendientes o descanso sin reservas rígidas.",
+        meta: ["Alternativa", "Sin excursión", "Dublín tranquilo"],
       },
     ],
   },
@@ -749,6 +848,10 @@ const days = [
     month: "Julio",
     title: "Regreso",
     subtitle: "Salida al aeropuerto, sala VIP y vuelo de vuelta",
+    image: {
+      src: "Imagenes/Miercoles8.png",
+      alt: "Imagen de cabecera del miércoles de regreso",
+    },
     color: "#fef3c7",
     keyInfo: [
       ["Vuelo", "Salida de Dublín a las 20:55 hora local"],
