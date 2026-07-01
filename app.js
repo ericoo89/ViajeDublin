@@ -714,7 +714,7 @@ const days = [
     weekday: "Martes",
     month: "Julio",
     title: "Kilkenny o día libre en Dublín",
-    subtitle: "Excursión provisional a Kilkenny de 09:30 a 19:00",
+    subtitle: "Excursión provisional a Kilkenny, saliendo de Dublín a las 09:30 y volviendo por la tarde-noche",
     image: {
       src: "Imagenes/Martes7.png",
       alt: "Imagen de cabecera del martes de excursión fuera de Dublín",
@@ -722,13 +722,14 @@ const days = [
     color: "#fce7f3",
     keyInfo: [
       ["Estado", "Plan provisional"],
-      ["Excursión", "Kilkenny, salida de Dublín a las 09:30 y regreso sobre las 19:00"],
+      ["Excursión", "Kilkenny, salida de Dublín a las 09:30 y salida de Kilkenny sobre las 19:00"],
       ["Plan B", "Si no hay excursión, dejar el día libre por Dublín"],
       ["Hotel", "Salida y regreso desde Hampton by Hilton"],
     ],
     notes: [
-      "Kilkenny queda como primera opción para una excursión de día completo, saliendo de Dublín a las 09:30 y volviendo sobre las 19:00.",
+      "Kilkenny queda como primera opción para una excursión de día completo, saliendo de Dublín a las 09:30 y saliendo de Kilkenny sobre las 19:00.",
       "Confirmar si la excursión será organizada o por cuenta propia en tren/bus antes de fijar punto de salida y billetes.",
+      "Al volver más tarde desde Kilkenny, queda más margen para hacer cosas allí sin ir con prisa.",
       "Si al final no hay excursión, convertir este martes en día libre por Dublín sin reservas fuertes.",
       "No cargar este día con visitas imprescindibles de Dublín hasta saber si Kilkenny queda confirmado.",
     ],
@@ -798,7 +799,7 @@ const days = [
         time: "15:00",
         title: "Paseo por Medieval Mile",
         tag: "Paseo",
-        description: "Tramo de tarde para recorrer Medieval Mile, calles del centro y, si encaja, acercarse a St Canice's Cathedral.",
+        description: "Tramo de tarde para recorrer Medieval Mile, calles del centro y acercarse a St Canice's Cathedral con más calma.",
         meta: ["Medieval Mile", "St Canice opcional", "Fotos y paseo"],
         links: [
           {
@@ -813,11 +814,18 @@ const days = [
       },
       {
         time: "17:00",
+        title: "Tarde libre en Kilkenny",
+        tag: "Libre",
+        description: "Tiempo extra para seguir viendo Kilkenny: tiendas, paseo tranquilo, café, alguna visita pendiente o simplemente disfrutar el centro sin correr.",
+        meta: ["Kilkenny", "Tarde flexible", "Sin prisa"],
+      },
+      {
+        time: "19:00",
         title: "Regreso hacia Dublín",
         tag: "Traslado",
         tagTone: "important",
-        description: "Inicio del regreso desde Kilkenny para llegar de vuelta a Dublín sobre las 19:00.",
-        meta: ["Kilkenny -> Dublín", "Llegada objetivo 19:00"],
+        description: "Inicio del regreso desde Kilkenny sobre las 19:00 para aprovechar más la tarde allí.",
+        meta: ["Salida de Kilkenny: 19:00", "Kilkenny -> Dublín"],
         links: [
           {
             label: "Ruta de vuelta",
@@ -826,11 +834,11 @@ const days = [
         ],
       },
       {
-        time: "19:00",
+        time: "21:00",
         title: "Llegada a Dublín",
         tag: "Llegada",
-        description: "Llegada prevista a Dublín. Dejar la noche flexible para cenar cerca del hotel o descansar.",
-        meta: ["Regreso", "Noche libre"],
+        description: "Llegada estimada a Dublín. Dejar la noche simple: cena cerca del hotel o descanso.",
+        meta: ["Regreso", "Cena sencilla", "Descanso"],
       },
       {
         time: "Plan B",
